@@ -78,7 +78,7 @@ __global__ void sumReduction3(int *v, int *vsum) {
 	__shared__ int partial_sum[SHMEM_SIZE];
 
 	// Calculate thread ID
-	int tid = blockIdx.x * blockDim.x + threadIdx.x;
+	// int tid = blockIdx.x * blockDim.x + threadIdx.x;
 
 	// Load elements AND do first add of reduction
 	// Vector now 2x as long as number of threads, so scale i
@@ -115,7 +115,7 @@ __global__ void sumReduction2(int *v, int *vsum) {
 	__shared__ int partial_sum[SHMEM_SIZE];
 
 	// Calculate thread ID
-	int tid = blockIdx.x * blockDim.x + threadIdx.x;
+	// int tid = blockIdx.x * blockDim.x + threadIdx.x;
 
 	// Load elements AND do first add of reduction
 	// Vector now 2x as long as number of threads, so scale i

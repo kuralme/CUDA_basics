@@ -1,2 +1,2 @@
-mkdir -p build && cd ./build
+mkdir -p build bin && cd ./build
 cmake .. && make

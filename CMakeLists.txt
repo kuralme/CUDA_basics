@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(cudatests)
+project(cuda_basics)
 
 find_package(CUDA REQUIRED)
 find_package(CUDAToolkit REQUIRED)
@@ -41,8 +41,8 @@ include_directories(
   ${CUDA_INCLUDE_DIRS}
 )
 
-# Exec output directory
-set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR})
+# Executables output directory
+set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}/bin)
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 
 cuda_add_executable(vectoradd vectoradd.cu)

@@ -17,6 +17,7 @@ bash makebuild.sh
 This will create executables specified in 'CMakeList.txt' file
 
 If using VSCode add following to folder '.vscode' as 'c_cpp_properties.json' file to let Intellisense find nvcc
+```
 {
     "configurations": [
         {
@@ -33,3 +34,4 @@ If using VSCode add following to folder '.vscode' as 'c_cpp_properties.json' fil
     ],
     "version": 4
 }
+```
